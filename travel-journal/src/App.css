@@ -1,16 +1,112 @@
 .journal-outer-body {
-	width: 550px;
-	height: 760px;
-    margin: 270px auto;
-	background-color: aquamarine;
+	width: 700px;
+
+	height: 890px;
+	margin: 200px auto;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	border-radius: 11px;
+	border-color: green;
+	box-shadow: 1px 2px 15px 1px grey;
 }
 
 .journal-inner-body {
-	width: 500px;
-	height: 700px;
+	width: 690px;
+	height: 878px;
 	display: flex;
-margin: 0px 10px 4px 6px  ;
 	flex-direction: column;
-	background-color: black;
-    position:relative;
+	background-color: white;
+	border-radius: 13px;
+	border-color: rgb(227, 231, 229);
+	border-style: solid;
+	border-width: 0.5px;
+	position: absolute;
+}
+
+.navbar {
+	width: 100%;
+	height: 55px;
+	background-color: rgba(245, 90, 90, 1);
+	text-align: center;
+	border-radius: 10px 10px 0px 0px;
+	font-size: 1.12rem;
+	color: white;
+}
+
+.cardSection {
+	width: 100%;
+	height: 228px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	top: 50px;
+}
+
+.cardBody {
+	width: 100%;
+	height: 198px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.cardImage {
+	width: 23%;
+	height: 100%;
+	margin-left: 59px;
+	background-color: blue;
+	border-radius: 8px;
+}
+.setImage{
+	max-width: 100%;  /*Set the desired width */
+	max-height: 100%; /*Set the desired height*/
+	width: auto;       /* Ensure aspect ratio is preserved */
+	height: 100%;  
+	border-radius: 5px;
+	object-fit:cover;
+
+
+
+}
+.cardContent {
+	width: 64%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+	justify-content: center;
+}
+
+.cardContentHeader {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.cardContentName {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+}
+.cardContentDate {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.cardContentDescription {
+	display: flex;
+
+	width: 94%;
+	height: 40%;
+	align-items: start;
 }

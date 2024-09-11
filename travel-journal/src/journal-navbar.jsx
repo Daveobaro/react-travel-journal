@@ -1,6 +1,6 @@
 function JournalNavbar() {
 	return (
-		<header>
+		<header className='navbar'>
 			<a>
 				<p>
 					<i class='fa-solid fa-earth-americas fa-spin fa-spin-reverse'></i> my
