@@ -3,7 +3,7 @@ import React from 'react';
 export default function JournalCard(props) {
 	let horizontalLine;
 	if (props.id !== '3') {
-		horizontalLine = <hr width='100%' size='1' color='lightgrey' noshade />;
+		horizontalLine = <hr width='100%' size='1' color='lightgrey' />;
 	} else if (props.id === 3) {
 		horizontalLine = ' ';
 	}
@@ -22,10 +22,10 @@ export default function JournalCard(props) {
 					<div className='cardContentHeader'>
 						<p>
 							{' '}
-							<i class='fa-solid fa-location-dot icon'></i> {props.country}{' '}
+							<i className='fa-solid fa-location-dot icon'></i> {props.country}{' '}
 							&nbsp; &nbsp;
 						</p>
-						<p>View on Google Maps</p>
+						<a href={props.href} target='_blank' className='googleMapLink'>  <p >View on Google Maps</p></a>
 					</div>
 
 					<div className='cardContentName'>
