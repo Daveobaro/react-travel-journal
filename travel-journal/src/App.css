@@ -34,17 +34,19 @@
 	border-radius: 10px 10px 0px 0px;
 	font-size: 1.12rem;
 	color: white;
+	font-family: 'Inter', system-ui;
+	margin-bottom: 10px;
 }
 
 .cardSection {
 	width: 100%;
-	height: 228px;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	position: relative;
-	top: 50px;
+	/* position: relative;
+	top: 50px; */
 }
 
 .cardBody {
@@ -53,24 +55,23 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	font-family: 'Inter', system-ui;
+	margin-top:10px;
 }
 
 .cardImage {
 	width: 23%;
 	height: 100%;
 	margin-left: 59px;
-	background-color: blue;
 	border-radius: 8px;
 }
-.setImage{
-	max-width: 100%;  /*Set the desired width */
-	max-height: 100%; /*Set the desired height*/
-	width: auto;       /* Ensure aspect ratio is preserved */
-	height: 100%;  
+.setImage {
+	max-width: 100%; 
+	max-height: 100%; 
+	width: 100%; 
+	height: 100%;
 	border-radius: 5px;
-	object-fit:cover;
-
-
+	object-fit: cover;
 
 }
 .cardContent {
@@ -89,24 +90,44 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	font-weight: 200;
+	font-size: 14px;
 }
 .cardContentName {
 	width: 100%;
 	height: 40px;
 	display: flex;
 	align-items: center;
+	font-weight: 200;
 }
 .cardContentDate {
 	width: 100%;
 	height: 20px;
 	display: flex;
 	align-items: center;
+	font-weight: 500;
+	font-size: 12px;
 }
 
 .cardContentDescription {
 	display: flex;
-
 	width: 94%;
 	height: 40%;
 	align-items: start;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+.icon {
+	color: red;
+	font-size: smaller;
+}
+
+hr {
+	width: 580px;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom:-20px;
+	
+
 }

@@ -1,7 +1,13 @@
-import React from "react"
-
+import React from 'react';
 
 export default function JournalCard(props) {
+	let horizontalLine;
+	if (props.id !== '3') {
+		horizontalLine = <hr width='100%' size='1' color='lightgrey' noshade />;
+	} else if (props.id === 3) {
+		horizontalLine = ' ';
+	}
+
 	return (
 		<div className='cardSection'>
 			<div className='cardBody'>
@@ -14,12 +20,16 @@ export default function JournalCard(props) {
 				</div>
 				<div className='cardContent'>
 					<div className='cardContentHeader'>
-						<p> {props.country} &nbsp; &nbsp;</p>
-						<p>{props.mapLink}</p>
+						<p>
+							{' '}
+							<i class='fa-solid fa-location-dot icon'></i> {props.country}{' '}
+							&nbsp; &nbsp;
+						</p>
+						<p>View on Google Maps</p>
 					</div>
 
 					<div className='cardContentName'>
-						<h1>{props.locationName}</h1>
+						<h2>{props.locationName}</h2>
 					</div>
 					<div className='cardContentDate'>
 						<p>{props.dateTravelled}</p>
@@ -29,7 +39,7 @@ export default function JournalCard(props) {
 					</div>
 				</div>
 			</div>
-			<hr></hr>
+			{horizontalLine}
 		</div>
 	);
 }
